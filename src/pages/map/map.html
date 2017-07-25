@@ -4,11 +4,4 @@
 <!-- the component as the initial center of the map: -->
 <agm-map [latitude]="26.8206" [longitude]="30.8025">
     <agm-marker *ngFor = "let point of points" [latitude]="point.lat" [longitude]="point.lng"></agm-marker>
-  <!-- <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker> -->
 </agm-map>
-
-<ion-tabs>
-  <ion-tab [root]="tab1Root"></ion-tab>
-  <ion-tab [root]="tab2Root"></ion-tab>
-  <ion-tab [root]="tab3Root"></ion-tab>
-</ion-tabs>

@@ -5,7 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 // import { HomePage } from '../pages/home/home';
 import {ChatPage} from '../pages/chatPage/chatPage';
-import {MapPage} from '../pages/map/map';
+// import {MapPage} from '../pages/map/map';
 
 // import {ChatBubble} from '../components/chatBubble/chatBubble';
 
@@ -14,7 +14,7 @@ import {MapPage} from '../pages/map/map';
 })
 export class MyApp {
 
-  rootPage:any = MapPage;
+  rootPage:any = ChatPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
