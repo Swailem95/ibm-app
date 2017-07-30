@@ -22,3 +22,5 @@ validateClientToken(token, function(isValid){
     //should print true if the token is valid
     console.log(isValid);
 });
+
+module.export = validateClientToken;
