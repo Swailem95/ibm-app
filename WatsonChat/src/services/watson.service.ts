@@ -13,7 +13,7 @@ export class WatsonService {
 
         //initial greeting from Watson
 
-        this.http.post('http://localhost:3000/api/message', {}).map(res => res.json())
+        this.http.post('https://5f60fcf1.ngrok.io/api/message', {}).map(res => res.json())
         .subscribe(res =>
             {
                 this.context = res.context;
@@ -29,7 +29,7 @@ export class WatsonService {
 
             let body = {input: {text: message}, context: this.context};
 
-            this.http.post('http://localhost:3000/api/message', body).map(res => res.json())
+            this.http.post(' https://5f60fcf1.ngrok.io/api/message', body).map(res => res.json())
             .subscribe(res =>
                 {
                     this.context = res.context;
@@ -47,7 +47,7 @@ export class WatsonService {
                         isMe: true,
                         message: message,
                         senderName: this.username,
-                        image: '../../assets/img/user.png',
+                        image: 'assets/img/user.png',
                         time: this.getTime()
                     });
                 }
@@ -58,7 +58,7 @@ export class WatsonService {
                         isMe: false,
                         message: message,
                         senderName: "Watson",
-                        image: '../../assets/img/watson.png',
+                        image: 'assets/img/watson.png',
                         time: this.getTime()
                     });
                 }
