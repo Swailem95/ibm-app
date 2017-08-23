@@ -14,8 +14,10 @@ npm-debug.log*
 
 .idea/
 .sass-cache/
+keys/
 .tmp/
 .versions/
+*/ngrok/
 coverage/
 dist/
 node_modules/
